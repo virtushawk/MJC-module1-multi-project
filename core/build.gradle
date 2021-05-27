@@ -1,0 +1,12 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    flatDir {
+        dirs '../lib'
+    }
+}
+dependencies {
+    implementation name: 'utils-1.3.5'
+}
