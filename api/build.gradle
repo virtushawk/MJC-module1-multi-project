@@ -15,6 +15,7 @@ repositories {
         dirs '../lib'
     }
 }
+
 application {
     // Define the main class for the application.
     mainClass = 'edu.epam.api.App'

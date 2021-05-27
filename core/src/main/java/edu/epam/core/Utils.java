@@ -2,18 +2,15 @@ package edu.epam.core;
 
 import edu.epam.utils.StringUtils;
 
-public class Utils {
+import java.util.Arrays;
 
-    private Utils() {}
+public final class Utils {
+
+    private Utils() {
+        throw new UnsupportedOperationException();
+    }
 
     public static boolean isAllPositiveNumbers(String... str) {
-        boolean flag = true;
-        for (String number : str) {
-            if (!StringUtils.isPositiveNumber(number)) {
-                flag = false;
-                break;
-            }
-        }
-        return flag;
+        return Arrays.stream(str).allMatch(StringUtils::isPositiveNumber);
     }
 }
