@@ -7,7 +7,7 @@ import java.util.Arrays;
 public final class Utils {
 
     private Utils() {
-        throw new UnsupportedOperationException();
+        throw new UnsupportedOperationException("Object of this class could not be instantiated");
     }
 
     public static boolean isAllPositiveNumbers(String... str) {
