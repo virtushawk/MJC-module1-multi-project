@@ -4,6 +4,6 @@ import edu.epam.core.Utils;
 
 public class App {
     public static void main(String[] args) {
-        Utils.isAllPositiveNumbers("a2","79");
+        Utils.isAllPositiveNumbers("2","79");
     }
 }
